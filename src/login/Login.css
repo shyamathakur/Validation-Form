@@ -1,0 +1,38 @@
+.login-main-div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 68px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+  
+  .login-main-div h3 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+  
+  .login-form-button {
+    margin-top: 10px;
+  }
+  
+  .login-link-button {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  
+  .login-link-button a {
+    text-decoration: none;
+  }
+
+  :where(.css-dev-only-do-not-override-pr0fja).ant-form-item .ant-form-item-label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: start;
+    vertical-align: middle;
+}
+
+/* .input-form{
+    display: flex;
+    flex-direction: row;
+} */

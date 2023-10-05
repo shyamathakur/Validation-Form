@@ -1,0 +1,52 @@
+.signup-main-div {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 60px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+  
+  .signup-main-div h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form-button {
+    margin-top: 10px;
+  }
+  
+  .signup-link-button {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .dashboard-form-button{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .signup-link-button a {
+    text-decoration: none;
+  }
+
+  :where(.css-dev-only-do-not-override-pr0fja).ant-form-item .ant-form-item-label {
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: start;
+    vertical-align: middle;
+}
+
+/* .input-form{
+    display: flex;
+    flex-direction: row;
+} */
+:where(.css-dev-only-do-not-override-pr0fja).ant-col-sm-16 {
+    --ant-display: block;
+    display: block;
+    display: var(--ant-display);
+    flex: 0 0 66.66666666666666%;
+    max-width: 100%;
+}
+button.ant-btn.css-dev-only-do-not-override-pr0fja.ant-btn-primary.signup-form-button {
+    text-align: center;
+    margin-left: 41px;
+}
