@@ -11,7 +11,7 @@ function Router() {
     <div>
       <Routes>
         <Route path="/" element={<Login />}/>
-          {/* <Route path='/' element={<Signup />} /> */}
+          <Route path='/login' element={<Login/>}/>
           <Route path='/signup' element={<Signup />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="contact" element={<Card />} />

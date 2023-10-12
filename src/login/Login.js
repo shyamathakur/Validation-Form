@@ -1,11 +1,12 @@
 import { Form, Input, Button } from 'antd';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 import "./Login.css"
 
 function Login() {
   const [email, setEmail] = useState('');
   const [pwd, setPwd] = useState('');
+  const navigate = useNavigate();
   const handleLogin = () => {
     // Retrieve user data from local storage
     const storedEmail = localStorage.getItem('Myemail');
@@ -18,6 +19,7 @@ function Login() {
       // Email and password do not match, show an error message
       alert('Login failed. Please check your email and password.');
     }
+    navigate("/dashboard")
   }
 
   return (
@@ -78,13 +80,13 @@ function Login() {
                 Login
               </Button>
           </Form.Item>
-          <Form.Item >
+          {/* <Form.Item >
             <Link to="/dashboard" className="login-link-button" style={{ marginLeft: "10px" }}>
               <Button type="primary" htmlType="submit" className="login-form-button">
                 dashboard
               </Button>
             </Link>
-          </Form.Item>
+          </Form.Item> */}
           <Form.Item >
             <Link to="/signup" className="login-link-button" style={{ marginLeft: "10px" }}>
               <Button type="primary" className="login-form-button">

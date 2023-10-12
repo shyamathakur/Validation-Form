@@ -6,7 +6,7 @@ import {
   Select,
 } from 'antd';
 import "./Signup.css"
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const { Option } = Select;
 const formItemLayout = {
   labelCol: {
@@ -42,14 +42,15 @@ const App = () => {
   const [email, setEmail] = useState('');
   const [pwd, setPwd] = useState('');
   const [confirmPwd, setConfirmPwd] = useState('');
+  const navigate = useNavigate();
 
   const handleForm = () => {
     // Passwords match, you can save them to local storage
     localStorage.setItem("Myemail", email);
     localStorage.setItem("Mypsw", pwd);
     localStorage.setItem("Mycon_pwd", confirmPwd);
-    alert("Form submitted successfully!", window.location.reload(false));
-    // window.location.reload(false);
+    alert("Form submitted successfully!");
+    navigate("/dashboard")
   }
   const [form] = Form.useForm();
   const onFinish = (values) => {
@@ -136,16 +137,21 @@ const App = () => {
             onChange={(e) => setConfirmPwd(e.target.value)} />
         </Form.Item>
 
-        <div style={{display:"flex",flexDirection:"row"}}>
-          <Form.Item {...tailFormItemLayout}>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          {/* <Form.Item {...tailFormItemLayout}>
             <Button type="primary" htmlType="submit" className="signup-form-button">
               Register
             </Button>
+          </Form.Item> */}
+          <Form.Item >
+            <Button type="primary" htmlType="submit" className="login-form-button">
+              Ragister
+            </Button>
           </Form.Item>
           <Form.Item {...tailFormItemLayout}>
-            <Link className="signup-link-button" to="/dashboard" >
+            <Link className="signup-link-button" to="/login" style={{ marginLeft: "10px" }}>
               <Button type="primary" htmlType="submit" className="dashboard-form-button">
-                Dashboard
+                Login
               </Button>
             </Link>
           </Form.Item>
