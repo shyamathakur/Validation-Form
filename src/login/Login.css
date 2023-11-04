@@ -1,38 +1,59 @@
-.login-main-div {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 68px;
-    border-radius: 5px;
-    background-color: #fff;
-}
-  
-  .login-main-div h3 {
-    /* text-align: center; */
-    margin-bottom: 20px;
-  }
-  
-  .login-form-button {
-    margin-top: 10px;
-  }
-  
-  .login-link-button {
-    margin-top: 10px;
-    margin-left: 0px;
-  }
-  
-  .login-link-button a {
-    text-decoration: none;
-  }
-
-  :where(.css-dev-only-do-not-override-pr0fja).ant-form-item .ant-form-item-label {
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: start;
-    vertical-align: middle;
+.perent-div-login {
+  display: flex;
+  width: 96%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px;
+  margin-top: 40px;
 }
 
-/* .input-form{
-    display: flex;
-    flex-direction: row;
-} */
+.form-div {
+  width: 50%;
+  padding: 10px 40px;
+}
+
+.img-div {
+  width: 50%;
+  /* padding: 10px 40px; */
+}
+
+.img-form {
+  width: 80%;
+}
+
+.form-button-color {
+  background-color: #c2410c;
+}
+
+.button-group-div {
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+  flex-direction: row;
+}
+
+:where(.css-dev-only-do-not-override-pr0fja).ant-form {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  margin-top: 40px;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.input{
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}

@@ -2,7 +2,7 @@
 import { Button, Card } from 'antd';
 import React, { useState, useEffect } from 'react';
 
-function ProductList() {
+function Dashboard() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]); // State to manage the shopping cart
 
@@ -104,4 +104,4 @@ function ProductList() {
   );
 }
 
-export default ProductList;
+export default Dashboard;

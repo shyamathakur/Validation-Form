@@ -38,7 +38,7 @@ const tailFormItemLayout = {
     },
   },
 };
-const App = () => {
+const Signup = () => {
   const [email, setEmail] = useState('');
   const [pwd, setPwd] = useState('');
   const [confirmPwd, setConfirmPwd] = useState('');
@@ -136,13 +136,7 @@ const App = () => {
             value={confirmPwd}
             onChange={(e) => setConfirmPwd(e.target.value)} />
         </Form.Item>
-
-        <div style={{ display: "flex", flexDirection: "row" }}>
-          {/* <Form.Item {...tailFormItemLayout}>
-            <Button type="primary" htmlType="submit" className="signup-form-button">
-              Register
-            </Button>
-          </Form.Item> */}
+        <div style={{ display: "flex", flexDirection: "row" }}>         
           <Form.Item >
             <Button type="primary" htmlType="submit" className="login-form-button">
               Ragister
@@ -160,4 +154,4 @@ const App = () => {
     </div>
   );
 };
-export default App;
+export default Signup;
